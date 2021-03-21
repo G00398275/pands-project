@@ -4,7 +4,7 @@ Author: Ross Downey
 
 PURPOSE
 The purpose of this project is to research the well known Fisher's Iris Data set online, 
-and to write documentation and Python code which investigates the data set.
+and to write documentation and Python code which investigates the data set appropriately.
 
 RESEARCH
 To initiate this project, the author began by searching the internet for resources and previous
@@ -25,3 +25,4 @@ REFERENCES
 https://onlinelibrary.wiley.com/doi/epdf/10.1111/j.1469-1809.1936.tb02137.x
 https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5
 https://en.wikipedia.org/wiki/Iris_flower_data_set#cite_note-anderson35-3
+https://tableconvert.com/?output=json
