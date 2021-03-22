@@ -21,8 +21,13 @@ From these measurements Fisher was able to propose a model that could predict th
 SCOPE
 The scope of this project is to download the Fisher / Anderson iris data set into Python, write a program in Python that outputs a summary of each variable to a single text file, saves a histogram of each variable to png files and outputs a scatter plot of each pair of variables. A text file summarising the project will also be created to clearly explain what is entailed in investigating the data set and how Python is adept at handling this data.
 
+INITIAL ASSESSMENT
+To begin assessing this data the author decided that the best place to start would be to mean all of the dimensions given in the data. Following this the author noted that the overall means, although useful, would not demonstrate the differences in petal/sepal dimensions. Consequently, the next step was to group the data by species (setosa / versicolor / virginica) and then determine the average sizes per group. A quick assessment of these means clearly shows that the virginica has the longest (average) sepal lengths, but the setosa has the widest (average) sepal widths. The versicolor has the longest petal lengths, but the virginica has the widest petals. 
+This is an encouraging start to the assessment of this data. It is clearly evident, just from assessing the mean dimensions, that the three different species can, in some way, be distinguished from each other.
+Further statistical evaluation is required, particularly in the area of standard deviations, quartile ranges etc. is required, along with graphical representations (histograms, scatter plots etc.) to present and correlate the data.
+
 REFERENCES
 https://onlinelibrary.wiley.com/doi/epdf/10.1111/j.1469-1809.1936.tb02137.x
 https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5
 https://en.wikipedia.org/wiki/Iris_flower_data_set#cite_note-anderson35-3
-https://tableconvert.com/?output=json
+https://tableconvert.com/?output=csv
