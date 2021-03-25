@@ -1,4 +1,4 @@
-# Programming and Scripting 2021 Project: Fisher's Iris Data Set; stats.py
+# Programming and Scripting 2021 Project: Fisher's Iris Data Set; boxplots.py
 # Lecturer: Andrew Beatty
 # Author: Ross Downey
 
