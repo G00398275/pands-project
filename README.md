@@ -52,6 +52,27 @@ Following the construction of boxplots and the data trends revealed by these, th
 Initially, the histograms were constructed on the basis of their dimensions only. While useful in terms if visualisation of the dataset as a whole, this did not provide any assistance in building a predictive model.
 The key take from these histograms is that both the sepal lengths and widths appear to be relatively normally distributed (the sepal widths appear particularly normally distributed). The petal dimensions, however, do not show any semblance of a normal distribution, and are both in fact bimodal. This infers that a predicitive model is more likely to be constructed through use of the sepal dimensions instead of the petal measurements. If data is normally distributed about the mean it implies that it is in stastical control and it is more favourable to predicitive models. The presence of skewed or bimodal histograms is more indicative of data that is not in statistical control.
 On researching the internet for further histogram plots the author noted the "pairplot" function. This allowed plots to be constructed in appropriate groups (in this case species of iris). The resulting histogram and scatter plots gave a decent overview of the data which allowed for further assessment of the dataset. 
+Observations from this pairplot incude:
+1) Petal Length vs Petal Width seems to indicate a high level of regression for all species.
+2) Sepal Length vs Sepal Width indicates the opposite.
+3) Sepal Length vs Petal Length indicates good regression for versicolor and virginica, but not for setosa.
+4) Sepal Length vs Petal Width also indicates a level of regression for versicolor and virginica but not for setosa.
+5) Overall this pairplot indicates that the setosa species may not be suitable to build a predicitive model in this way but some dimensions of virginica and versicolor could be used. This should be support and/or confirmed by creating these scatter plots for each pair of data and calculating the regression value of each plot.
+
+GRAPHICAL REPRESENTATION - HISTOGRAMS (GROUPED BY SPECIES)
+The iris dataset was divided into species and each dimension was plotted on a histogram. 
+This helps us to visualise the data in a better manner than the pairplot.
+Observations made include:
+1) Petal Length: Tends to be normally distributed with a noticeable difference between setosa and the other two species
+2) Petal Width: Not as normally distributed but setosa also obviously different (shorter) than versica and versicolor
+3) Sepal Length: All three species appear normally distributed but are close together (with some overlap)
+4) Sepal Width: Also are tending towards normal distribution but are very close together. In the case of
+versicolor and virginia the dimensions are nearly indistinguishable from each other.
+
+GRAPHICAL REPRESENTATION - SCATTER PLOTS
+A scatter plot is a plot of two variables against each other on two different axes, x and y. The linearity of the data (i.e an increase in one variable corresponds to an increase in the other) can be measured by calculating the regression value of a straight line drawn through the scatter plot data. The closer to one the regression value is the better the relative relationship (linearity) of the data.
+Scatter plots will also start to informs us of actual mathematical terms we can use to interpret the data as opposed to visual indicators from boxplots and histograms.
+
 
 
 
