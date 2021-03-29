@@ -72,6 +72,14 @@ versicolor and virginia the dimensions are nearly indistinguishable from each ot
 GRAPHICAL REPRESENTATION - SCATTER PLOTS
 A scatter plot is a plot of two variables against each other on two different axes, x and y. The linearity of the data (i.e an increase in one variable corresponds to an increase in the other) can be measured by calculating the regression value of a straight line drawn through the scatter plot data. The closer to one the regression value is the better the relative relationship (linearity) of the data.
 Scatter plots will also start to informs us of actual mathematical terms we can use to interpret the data as opposed to visual indicators from boxplots and histograms.
+Each dimension was plotted against all the others using the program scatter.py. Visually, some of the 
+plots demonstrated a relationship between each other. These included sepal length vs petal width
+(correlation value of 0.82), and sepal length vs petal length (0.87).
+However, a high correlation value of 0.96 has been achieved from plotting petal length against petal width. This indicates that the best way to build a predictive model based on the iris data set would be to use the data from the petal dimensions.
+Another point to note is that there is a marked difference between the three species in terms of petal dimensions. The setosa species is noticeably smaller than the other two in terms of petal measurements. While there is a slight overlap between versicolor and virginica there is also an obvious difference between these two species. 
+Overall, this indicates that the easiest species to identify of the three would be the setosa. The setosa species has significantly smaller petal dimensions than the other two species.
+The author will now proceed to build a mathematical model in Python that could be used to distinguish the three species of iris from each other.
+
 
 
 
