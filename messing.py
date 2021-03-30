@@ -5,7 +5,8 @@
 import pandas as pd 
 from pandas import DataFrame
 import seaborn as sns
-import numpy as np 
+import numpy as np
+import sys
 # importing relevant modules
 
 
@@ -61,3 +62,7 @@ print(pivotData.pivot(columns='species', values='species').describe())
 Now have good basis of statistical data. 
 Can analyse and decide on best path to follow in terms of graphical plots from this
 '''
+import subprocess
+outfile = open('test.txt','wt') #same with "w" or "a" as opening mode
+outfile.write()
+subprocess.Popen('ls',stdout=outfile)
