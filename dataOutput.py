@@ -1,4 +1,4 @@
-# Programming and Scripting 2021 Project: Fisher's Iris Data Set; scatter.py
+# Programming and Scripting 2021 Project: Fisher's Iris Data Set; dataOutput.py
 # Lecturer: Andrew Beatty
 # Author: Ross Downey
 
@@ -47,7 +47,7 @@ with open ("variableSummary.txt", "at") as f:
 
 species = myvar.groupby("species")
 with open ("variableSummary.txt", "at") as f:
-    f.write('\nThe mean values (grouped by species) are:\n')
+    f.write('\n\nThe mean values (grouped by species) are:\n')
     f.write(str(species.mean()))
 
 
@@ -71,7 +71,7 @@ with open ("variableSummary.txt", "at") as f:
 
 
 with open ("variableSummary.txt", "at") as f:
-    f.write("\n\nNow have good basis of statistical data.Can analyse and decide on best path to follow in terms of graphical plots from this")
+    f.write("\n\nNow have good basis of statistical data.\nCan analyse and decide on best path to follow in terms of graphical plots from this")
 
 
 
