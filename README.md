@@ -28,7 +28,7 @@ From these measurements Fisher was able to propose a model that could predict th
 The scope of this project is to download the Fisher / Anderson iris data set into Python, write a program in Python that outputs a summary of each variable to a single text file, saves a histogram of each variable to png files and outputs a scatter plot of each pair of variables. A text file summarising the project will also be created to clearly explain what is entailed in investigating the data set and how Python is adept at handling this data.
 
 ## CODE
-Note the programs on this project were all created using Python software on Microsoft Visual Studio Code. There are no specific requirements for running this code, download the relevant softwares (in this case Anaconda ver 3, and Microsoft VS Code) from internet and run accordingly. Each section below outlines what the code does, and summaries of the program outputs have been added to this readme file to make the project user friendly.
+Note the programs on this project were all created using Python software on Microsoft Visual Studio Code. There are no specific requirements for running this code, download the relevant softwares (in this case Anaconda ver 3, and Microsoft VS Code) from the internet and run accordingly. Each section below outlines what the code does, and summaries of the program outputs have been added to this readme file to make the project user friendly.
 
 ## INITIAL ASSESSMENT
 To begin assessing this data the author decided that the best place to start would be to mean all of the dimensions given in the data. To a student not familiar with data analytics it is not clear what way a project such as this should be initiated, it is felt that the average values would be a good place to start!
@@ -94,7 +94,7 @@ The following observations were made from these boxplots:
 
 ## GRAPHICAL REPRESENTATION - HISTOGRAMS
 Following the construction of boxplots and the data trends revealed by these, the next step was to construct histograms using the data for further analysis. A histogram arranges the data in groups (or bins / buckets) and then gives the frequency of this data in its respective groups. It is constructed with the groups on the x-axis and the frequency (represented by heights of bars) on the y-axis. Histograms can clearly indicate the spread of data and are give a good indication if the data is normally distributed or skewed. Matplotlib and Seaborn are two useful functions in Python for plotting histograms.
-Initially, the histograms were constructed on the basis of their dimensions only. While useful in terms if visualisation of the dataset as a whole, this did not provide any assistance in building a predictive model.
+Initially, the histograms were constructed on the basis of their dimensions only. While useful in terms of visualisation of the dataset as a whole, this did not provide much assistance in building a predictive model.
 
 ![](2021-04-16-12-04-14.png)
 
@@ -117,11 +117,12 @@ Observations from this pairplot incude:
 * 2) Sepal Length vs Sepal Width indicates the opposite.
 * 3) Sepal Length vs Petal Length indicates good regression for versicolor and virginica, but not for setosa.
 * 4) Sepal Length vs Petal Width also indicates a level of regression for versicolor and virginica but not for setosa.
-* 5) Overall this pairplot indicates that the setosa species may not be suitable to build a predicitive model in this way but some dimensions of virginica and versicolor could be used. This should be support and/or confirmed by creating these scatter plots for each pair of data and calculating the regression value of each plot.
 
-GRAPHICAL REPRESENTATION - HISTOGRAMS (GROUPED BY SPECIES)
+Following assessment of these initial histograms and the pairplot the next course of action is to group the data by species and subsequently plot histograms. This will give a better visual indication of the data and help the observer to notice any differences in dimensions between the species.
+
+## GRAPHICAL REPRESENTATION - HISTOGRAMS (GROUPED BY SPECIES)
 The iris dataset was divided into species and each dimension was plotted on a histogram. 
-This helps us to visualise the data in a better manner than the pairplot.
+This helps us to visualise the data in a clearer manner than the pairplot.
 
 ![](2021-04-16-12-15-56.png)
 
@@ -140,8 +141,9 @@ Observations made include:
 These grouped histograms have also confirmed that the initial hypothesis of petal dimensions being bimodal was in fact incorrect. The reason for the presence of two modes in the chart was due to significantly smaller petal dimensions in the iris setosa species. This gave the impression that there were two modes in the data but as there is an obvious difference in petal dimensions between the setosa species and the other two, the bimodal histograms has become evident. 
 
 ## GRAPHICAL REPRESENTATION - SCATTER PLOTS AND CORRELATION HEATMAP
-A scatter plot is a plot of two variables against each other on two different axes, x and y. The linearity of the data (i.e an increase in one variable corresponds to an increase in the other) can be measured by calculating the regression value of a straight line drawn through the scatter plot data. The closer to 1.00 the regression value is the better the relative relationship (linearity) of the data.
-Scatter plots will also start to informs us of actual mathematical terms we can use to interpret the data as opposed to visual indicators from boxplots and histograms. In order to visualize the correlation values generated from each scatter plot a heatmap was created clearly demonstrating each correlation value on one plot. This heatmap was generated using the built-in function in Seaborn.
+A scatter plot is a plot of two variables against each other on two different axes, x and y. The linearity of the data (i.e an increase in one variable corresponds to an increase in the other) can be measured by calculating the regression value of a straight line drawn through the scatter plot data. The closer to 1.00 the regression value is the better the relative relationship (linearity) of the data. 
+Although this was previously performed using the pairplot function, more detailed scatter plots are required.
+Scatter plots will also start to inform us of actual mathematical terms we can use to interpret the data as opposed to visual indicators from boxplots and histograms. In order to visualize the correlation values generated from each scatter plot a heatmap was created clearly demonstrating each correlation value on one plot. This heatmap was generated using the built-in function in Seaborn.
 
 ![](2021-04-16-12-21-37.png)
 
@@ -190,6 +192,7 @@ Python comes into its own in this regard when considering the difference. Writin
 The author's background is in analytical chemistry so this would not have been the first dataset I would have been required to analyse. However, my experience would have been limited to Excel, Powerpoint and Minitab softwares. Python is capable of doing the job of the three of these combined even with a limited amount of knowledge. I was particulary impressed with the matplotlib / numpy / seaborn functions. Having the ability to output visually impressive plots of the data is crucial in getting a reader to understand and interpret a dataset, particularly a large one. Reading Fisher's original paper is sufficient confirmation of this!
 
 REFERENCES
+Note: Further references are included in each program where relevant.
 * https://onlinelibrary.wiley.com/doi/epdf/10.1111/j.1469-1809.1936.tb02137.x
 * https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5
 * https://en.wikipedia.org/wiki/Iris_flower_data_set#cite_note-anderson35-3
