@@ -48,7 +48,6 @@ with open ("variableSummary.txt", "at") as f:
     f.write('\n\nThe mean values (grouped by species) are:\n')
     f.write(str(species.mean()))
 
-
 pivotData = sns.load_dataset("iris") # need to import data using seaborn for pivoting
 # this time loading the iris set from the seaborn module
  # Ref https://medium.com/@neuralnets/data-visualization-with-python-and-seaborn-part-1-29c9478a8700
@@ -76,7 +75,6 @@ plt.show()
 
 myvar = pd.read_csv("irisDataSet.csv") # Iris Data imported using Pandas
 # format taken from w3schools tutorial on pandas
-
 
 # Using "loc" function can group each set of data by species or whatever index required.
 # Ref https://stackoverflow.com/questions/44890713/selection-with-loc-in-python

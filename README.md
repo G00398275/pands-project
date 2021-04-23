@@ -11,7 +11,7 @@ and to write documentation and Python code which investigates the data set appro
 
 ## RESEARCH
 To initiate this project, the author began by searching the internet for resources and previous
-investigations into this data set. Having never previously heard of the Iris dataset the author began research using Google and also read the intial scientific journal wriiten by 
+investigations into this data set. Having never previously heard of the Iris dataset the author began research using Google and also read the initial scientific journal wriiten by 
 Ronald Fisher regarding this data. There are a wide variety of resources and studies based on this
 data set (a reference section is included below of the ones used for the purposes of this project).
 
@@ -26,6 +26,9 @@ From these measurements Fisher was able to propose a model that could predict th
 
 ## SCOPE
 The scope of this project is to download the Fisher / Anderson iris data set into Python, write a program in Python that outputs a summary of each variable to a single text file, saves a histogram of each variable to png files and outputs a scatter plot of each pair of variables. A text file summarising the project will also be created to clearly explain what is entailed in investigating the data set and how Python is adept at handling this data.
+
+## CODE
+Note the programs on this project were all created using Python software on Microsoft Visual Studio Code. There are no specific requirements for running this code, download the relevant softwares (in this case Anaconda ver 3, and Microsoft VS Code) from internet and run accordingly. Each section below outlines what the code does, and summaries of the program outputs have been added to this readme file to make the project user friendly.
 
 ## INITIAL ASSESSMENT
 To begin assessing this data the author decided that the best place to start would be to mean all of the dimensions given in the data. To a student not familiar with data analytics it is not clear what way a project such as this should be initiated, it is felt that the average values would be a good place to start!
@@ -45,7 +48,8 @@ Following this the author noted that the overall means, although useful, would n
 ![](2021-04-16-11-54-54.png)
 
 
-This is an encouraging start to the assessment of this data. It is clearly evident, just from assessing the mean dimensions alone, that the three different species can, in some way, be distinguished from each other.
+This is an encouraging start to the assessment of this data. It is clearly evident, just from assessing the mean dimensions 
+(and maxima / minima), that the three different species can, in some way, be distinguished from each other.
 Further statistical evaluation is required, particularly in the area of standard deviations, quartile ranges etc., along with graphical representations (histograms, scatter plots etc.) to present and correlate the data.
 Further statistical assessment of the Iris dataset was performed. This involved more research into capabilities of Python for handling datasets and outputting valuable information such as standard deviation, quartiles, minima / maxima etc. The author also discovered Python's ability to group the data by species and assess the data statistically in a grouped manner using the "pivot" function in the seaborn module.
 Also, the "info" function was researched. This confirmed that the data did not require cleaning (no null values found), and that 150 values were present in the dataset, which was the required number. 
@@ -64,13 +68,13 @@ The first box plot performed was of a plot of the different lengths and widths o
 ![](2021-04-16-11-59-08.png)
 
 Inital observations from this are:
-a) The sepals lengths are the largest numbers, the petals widths are the smallest.
-b) The width of the petals gives the largest range, while the sepal widths give the smallest
+* a) The sepals lengths are the largest numbers, the petals widths are the smallest.
+* b) The width of the petals gives the largest range, while the sepal widths give the smallest
 
 This is also a good indicator that the variables measured give significant differences which could be exploited for the purposes of building a predictive model.
 
 Further boxplots were also created but this time the data was grouped by species.
-These boxplots give a better indication of sizes of petals / sepals in each species, which in turn could give a better idea of the defining characteristics of each type of iris. Greater knowledge of the defining dimensions of these iris species will help in building a model for prediciting a species from its sepal and petal sizes. 
+These boxplots give a better indication of sizes of petals / sepals in each species, which in turn could give a better idea of the defining characteristics of each type of iris. Greater knowledge of the defining dimensions of these iris species will help in building a model for predicting a species from its sepal and petal sizes. 
 
 ![](2021-04-16-12-00-04.png)
 
@@ -133,6 +137,8 @@ Observations made include:
 * 3) Sepal Length: All three species appear normally distributed but are close together (with some overlap)
 * 4) Sepal Width: Also are tending towards normal distribution but are very close together. In the case of versicolor and virginia the dimensions are nearly indistinguishable from each other.
 
+These grouped histograms have also confirmed that the initial hypothesis of petal dimensions being bimodal was in fact incorrect. The reason for the presence of two modes in the chart was due to significantly smaller petal dimensions in the iris setosa species. This gave the impression that there were two modes in the data but as there is an obvious difference in petal dimensions between the setosa species and the other two, the bimodal histograms has become evident. 
+
 ## GRAPHICAL REPRESENTATION - SCATTER PLOTS AND CORRELATION HEATMAP
 A scatter plot is a plot of two variables against each other on two different axes, x and y. The linearity of the data (i.e an increase in one variable corresponds to an increase in the other) can be measured by calculating the regression value of a straight line drawn through the scatter plot data. The closer to 1.00 the regression value is the better the relative relationship (linearity) of the data.
 Scatter plots will also start to informs us of actual mathematical terms we can use to interpret the data as opposed to visual indicators from boxplots and histograms. In order to visualize the correlation values generated from each scatter plot a heatmap was created clearly demonstrating each correlation value on one plot. This heatmap was generated using the built-in function in Seaborn.
@@ -173,7 +179,7 @@ Accuracy values in the region of 0.8-0.9 were calculated by the model for the ve
 The Iris dataset, although intially made famous almost ninety years ago, has proven to be an excellent introduction to the world of data analysis using Python (or presumably any other appropriate software). 
 The dataset is sufficient in size that an appropriate level of data handling is required to manipulate the data into required outputs, but the dataset is not too large so as to overwhelm a beginner in data analytics. 
 
-The above study has shown that using the Iris dataset it is possible to build a model that could predict the species of an unknown Iris flower simply my measuring the width and lengths of its sepals and petals. Although this was performed mathematically by Fisher nearly ninety years ago, it can now be performed relatively easier on Python (or other software) with limited experience and time. 
+The above study has shown that using the Iris dataset it is possible to build a model that could predict the species of an unknown Iris flower simply by measuring the width and lengths of its sepals and petals. Although this was performed mathematically by Fisher nearly ninety years ago, it can now be performed relatively easier on Python (or other software) with limited experience and time. 
 
 On review of Fisher's published paper and comparing with the analysis done above the key difference is obvious. Fisher's study, although detailed and complete, is very descriptive and "maths-heavy". This can be off-putting to the casual observer especially when terms such as "logarithmic interpolation and, "degrees of freedom" are included. Readers without backgrounds in mathematics or statistics would have to spend a lot of time trying to interpret the terms used before even beginning to understand the paper.
 
@@ -182,9 +188,6 @@ On the other hand, the use of Python (particularly the visual plots) presents th
 Python comes into its own in this regard when considering the difference. Writing a few lines of code to output numerous statistical outputs and visual plots is much more convenient than the manual alternative. Python is also (in this author's opinion) more user friendly and logical than some of the other programming languages that I have encountered. Performing shell scripting on "bash" on a Linux terminal at the sime time as this project was written is confirmation of this!
 
 The author's background is in analytical chemistry so this would not have been the first dataset I would have been required to analyse. However, my experience would have been limited to Excel, Powerpoint and Minitab softwares. Python is capable of doing the job of the three of these combined even with a limited amount of knowledge. I was particulary impressed with the matplotlib / numpy / seaborn functions. Having the ability to output visually impressive plots of the data is crucial in getting a reader to understand and interpret a dataset, particularly a large one. Reading Fisher's original paper is sufficient confirmation of this!
-
-
-
 
 REFERENCES
 * https://onlinelibrary.wiley.com/doi/epdf/10.1111/j.1469-1809.1936.tb02137.x

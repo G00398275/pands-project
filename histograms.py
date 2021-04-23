@@ -6,8 +6,6 @@
 # Ref https://matplotlib.org/stable/gallery/color/named_colors.html
 # Ref https://towardsdatascience.com/histograms-and-density-plots-in-python-f6bda88f5ac0
 
-
-
 import pandas as pd 
 from pandas import DataFrame
 import seaborn as sns
@@ -43,8 +41,3 @@ for style in ['darkgrid']:
 
 '''Plotting of histograms by dimension only, need to group into species first to 
 gain more information from the histograms'''
-
-
-
-
-

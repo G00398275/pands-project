@@ -8,7 +8,6 @@ import seaborn as sns
 import numpy as np 
 # importing relevant modules
 
-
 myvar = pd.read_csv("irisDataSet.csv") # Iris Data imported using Pandas
 # format taken from w3schools tutorial on pandas
 
@@ -24,7 +23,6 @@ print("Sepal Width average is", myvar["sepal_width"].mean())
 print("Petal Length average is", myvar["petal_length"].mean())
 print("Petal Width average is", myvar["petal_width"].mean())
 print ("\n") 
-
 
 df = DataFrame(myvar, columns= ['sepal_length', 'sepal_width','petal_length', 'petal_width'])
 # Adapted from https://datatofish.com/descriptive-statistics-pandas/

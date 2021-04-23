@@ -6,8 +6,6 @@
 # Ref https://matplotlib.org/stable/gallery/color/named_colors.html
 # Ref https://towardsdatascience.com/histograms-and-density-plots-in-python-f6bda88f5ac0
 
-
-
 import pandas as pd 
 from pandas import DataFrame
 import seaborn as sns
@@ -21,7 +19,6 @@ plt.show()
 
 myvar = pd.read_csv("irisDataSet.csv") # Iris Data imported using Pandas
 # format taken from w3schools tutorial on pandas
-
 
 # Using "loc" function can group each set of data by species or whatever index required.
 # Ref https://stackoverflow.com/questions/44890713/selection-with-loc-in-python
@@ -77,6 +74,3 @@ for style in ['darkgrid']:
     plt.title ('Sepal Width - Grouped by Species')
     plt.legend(labels=['Setosa','Versicolor', 'Virginica'])
     plt.show()
-
-
-
