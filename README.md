@@ -138,7 +138,7 @@ Observations made include:
 * 3) Sepal Length: All three species appear normally distributed but are close together (with some overlap)
 * 4) Sepal Width: Also are tending towards normal distribution but are very close together. In the case of versicolor and virginia the dimensions are nearly indistinguishable from each other.
 
-These grouped histograms have also confirmed that the initial hypothesis of petal dimensions being bimodal was in fact incorrect. The reason for the presence of two modes in the chart was due to significantly smaller petal dimensions in the iris setosa species. This gave the impression that there were two modes in the data but as there is an obvious difference in petal dimensions between the setosa species and the other two, the bimodal histograms has become evident. 
+These grouped histograms have also confirmed that the initial hypothesis of petal dimensions being bimodal was in fact incorrect. The reason for the presence of two modes in the chart was due to significantly smaller petal dimensions in the iris setosa species. This gave the impression that there were two modes in the data but as there is an obvious difference in petal dimensions between the setosa species and the other two, the root cause for the bimodal histograms has become evident. 
 
 ## GRAPHICAL REPRESENTATION - SCATTER PLOTS AND CORRELATION HEATMAP
 A scatter plot is a plot of two variables against each other on two different axes, x and y. The linearity of the data (i.e an increase in one variable corresponds to an increase in the other) can be measured by calculating the regression value of a straight line drawn through the scatter plot data. The closer to 1.00 the regression value is the better the relative relationship (linearity) of the data. 
